@@ -17,9 +17,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&display=swap">
-  <script type="module" crossorigin src="/mercado-virtual-praia-mar/assets/loja-FB9igLhg.js"></script>
-  <link rel="modulepreload" crossorigin href="/mercado-virtual-praia-mar/assets/montar-CJdc_01g.js">
-  <link rel="stylesheet" crossorigin href="/mercado-virtual-praia-mar/assets/loja-tvPkDOP3.css">
+  <script type="module" crossorigin src="/mercado-virtual-praia-mar/assets/loja-B_0niMrh.js"></script>
+  <link rel="modulepreload" crossorigin href="/mercado-virtual-praia-mar/assets/montar-CZJ8ZH7U.js">
+  <link rel="stylesheet" crossorigin href="/mercado-virtual-praia-mar/assets/loja-CiSixR5T.css">
 </head>
 <body>
   <div id="palco" aria-label="Loja em 3D"></div>
@@ -28,6 +28,7 @@
     <div class="marca"><img src="/mercado-virtual-praia-mar/assets/marca/logo-mercado.webp" alt=""><div><b>Mercado Virtual</b><span>Praia Mar</span></div></div>
     <div class="ferramentas">
       <button class="chip" id="telaCheia" hidden aria-label="Tela cheia">⛶</button>
+      <button class="chip" id="ajuda" aria-label="Como comprar aqui">?</button>
       <button class="chip" id="menu" aria-label="Menu (Esc)">☰ Menu</button>
       <button class="chip" id="vista" aria-label="Trocar câmera (C)"><span id="vistaRotulo">3ª pessoa</span></button>
       <button class="chip carrinho" data-acao="carrinho" aria-label="Abrir carrinho"><span id="qtdCarrinho">0</span><span id="totalCarrinho">R$ 0,00</span></button>
@@ -41,6 +42,7 @@
   <div id="joy" hidden aria-hidden="true"><i></i></div>
   <button id="lupa" class="chip" hidden aria-pressed="false" aria-label="Aproximar a vista">🔍</button>
   <section id="painel" hidden role="dialog" aria-modal="false" aria-labelledby="painelTitulo"></section>
+  <section id="assistente" hidden role="dialog" aria-modal="false" aria-labelledby="assistenteTitulo" aria-live="polite"></section>
   <div id="aviso" role="status" aria-live="polite" hidden></div>
 
   <div id="abertura">
@@ -48,7 +50,7 @@
       <div class="cartao-topo">
         <img src="/mercado-virtual-praia-mar/assets/marca/logo-mercado.webp" alt="Praia Mar" class="logo">
         <h1>Mercado Virtual<br>Praia Mar</h1>
-        <p>Entre na loja, ande pelos corredores, pegue os produtos na prateleira e monte o seu carrinho.</p>
+        <p id="aberturaTexto">Entre na loja, ande pelos corredores, pegue os produtos na prateleira e monte o seu carrinho.</p>
       </div>
       <div class="cartao-corpo">
         <div class="quem" role="group" aria-label="Quem vai fazer as compras">
